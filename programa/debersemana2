@@ -1,0 +1,30 @@
+# Clase Estudiante
+class Estudiante:
+    def __init__(self, nombre, edad, carrera):
+        self.nombre = nombre
+        self.edad = edad
+        self.carrera = carrera
+
+    # Método para mostrar información
+    def mostrar_datos(self):
+        print("Nombre:", self.nombre)
+        print("Edad:", self.edad)
+        print("Carrera:", self.carrera)
+
+    # Método para estudiar
+    def estudiar(self):
+        print(self.nombre, "está estudiando.")
+
+
+# Creación de objetos
+estudiante1 = Estudiante("Ana", 20, "Ingeniería")
+estudiante2 = Estudiante("Carlos", 22, "Sistemas")
+
+# Uso de los métodos
+estudiante1.mostrar_datos()
+estudiante1.estudiar()
+
+print("----------------")
+
+estudiante2.mostrar_datos()
+estudiante2.estudiar()
